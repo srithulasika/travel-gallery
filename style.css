@@ -1,0 +1,72 @@
+/* Grid page layout*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.page {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "sidebar"
+    "footer";
+}
+
+.header {
+  grid-area: header;
+  background-color: #5b2a86;
+  color: #ffffff;
+  padding: 1.5rem;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #f6f0fa;
+  padding: 1rem;
+}
+
+.gallery {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #333;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.header h1 {
+  font-size: 6vw;
+}
+
+/* Gallery grids and cards */
+.gallery {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.card {
+  background-color: #f26b21;
+  color: white;
+  padding: 2em;
+  border-radius: 0.5rem;
+  min-height: 10rem;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+}
+
